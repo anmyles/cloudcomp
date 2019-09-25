@@ -21,130 +21,130 @@
 
 实验一、
 
-1. 购买完云服务器后登陆![image](https://github.com/anmyles/cloudcomp/blob/master/1.png)
+1. 购买完云服务器后登陆![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/1.png)
 2. 点登陆后输入密码
-3. ![image](https://github.com/anmyles/cloudcomp/blob/master/2.png)
-4. 登入到centos![image](https://github.com/anmyles/cloudcomp/blob/master/3.png)
-5. 下载Xshell6，新建会话![image](https://github.com/anmyles/cloudcomp/blob/master/4.png)
+3. ![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/2.png)
+4. 登入到centos![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.png)
+5. 下载Xshell6，新建会话![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/4.png)
 6. 输入购买的腾讯云账户的公网IP
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/5.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/5.png)
 
  
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/6.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/6.png)
 
 6. 点击确定生成会话，并连接
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/7.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/7.png)
 
-7. 输入用户名root及webshell设置的密码登陆到用户![image](https://github.com/anmyles/cloudcomp/blob/master/8.png)
+7. 输入用户名root及webshell设置的密码登陆到用户![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/8.png)
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/9.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/9.png)
 
 实验二：
 
 1. 安装git软件
 2. 打开gitbash
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/10.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/10.png)
 
 3. 验证是否存在ssh keys
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/11.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/11.png)
 
 4. 打开.ssh文件夹里的id_rsa.pub文件查看,并复制内容
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/12.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/12.png)
 
 5. 复制“id_rsa.pub”的内容到GitHub网站的Settings–>SSH and GPG keys中
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/13.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/13.png)
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/14.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/14.png)
 
-6. 测试SSH Key是否配置成功![image](https://github.com/anmyles/cloudcomp/blob/master/15.png)
+6. 测试SSH Key是否配置成功![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/15.png)
 7. 配置用户名和邮箱（之前已经配过）
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/16.png)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/16.png)
 
 8. 新建一个repository
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/17.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/17.png) 
 
 9. 初始化本地文件夹作为一个Git仓库：
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/18.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/18.png)  
 
 10. 拷贝GitHub网站中的项目网址：
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/19.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/19.png) 
 
-11. 添加远程代码仓库的URL：![image](https://github.com/anmyles/cloudcomp/blob/master/20.png) 
+11. 添加远程代码仓库的URL：![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/20.png) 
 12. 验证是否成功
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/21.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/21.png) 
 
 13. 首先从远程代码仓库拉取数据
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/22.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/22.png)  
 
 14. 新建README文档
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/23.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/23.png)  
 
 15. 添加文件夹中的所有文件，提交文件
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/24.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/24.png)  
 
 16. 推送本地更新至远程服务器
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/25.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/25.png) 
 
 实验三：
 
 1. 安装VMwareworkstation
 2. 新建虚拟机
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/26.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/26.png) 
 
-3. 选择稍后安装![image](https://github.com/anmyles/cloudcomp/blob/master/27.png) 
-4. 选择Linux-centos64位![image](https://github.com/anmyles/cloudcomp/blob/master/28.png) 
+3. 选择稍后安装![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/27.png) 
+4. 选择Linux-centos64位![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/28.png) 
 5. 选择安装位置
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/29.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/29.png)  
 
 6. 设定磁盘大小
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/30.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/30.png) 
 
 7. 点击完成开始安装
 
- ![image](https://github.com/anmyles/cloudcomp/blob/master/31.png) 
+ ![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/31.png) 
 
 8. 开启虚拟机
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/32.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/32.png)  
 
 9. 按回车键进入安装
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/33.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/33.png)  
 
 10. 选择语言
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/34.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/34.png) 
 
 11. 点击安装
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/35.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/35.png) 
 
 12. 许可证
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/36.png) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/36.png) 
 
 13. 输入密码登入centos
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/37.png)  
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/37.png)  
 
  
 
