@@ -6,15 +6,15 @@
 
 -uname -r
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps1.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.1.png)  
 
 -cat /etc/system-release
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps2.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.2.png)
 
 -yum check-update
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps3.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.3.png)
 
 **设置仓库**
 
@@ -26,7 +26,7 @@
   device-mapper-persistent-data \
   lvm2
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps4.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.4.png)
 
 使用以下命令来设置稳定的仓库。
 
@@ -34,39 +34,39 @@
     --add-repo \
     https:**//**download.docker.com**/**linux**/**centos**/**docker-ce.repo
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps5.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.5.png)
 
 安装最新版本的 Docker Engine-Community 和 containerd
 
 -yum install docker-ce docker-ce-cli containerd.io
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps6.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.6.png)
 
 -sudo yum install docker-ce-19.03.4 docker-ce-cli-19.03.4 containerd.io
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps7.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.7.png)
 
  
 
 sudo systemctl status docker
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps8.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.8.png)
 
 -systemctl enable docker
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps9.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.9.png)
 
  
 
 -docker version
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps10.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.10.png)
 
 查看docker所有的命令
 
 -docker
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps11.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.11.png)
 
  
 
@@ -88,39 +88,39 @@ sudo systemctl status docker
 
 查看当前系统docker的相关信息
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps12.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.12.png)
 
 查询可用的CentOS镜像
 
 -docker search centos
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps13.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.13.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps14.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.14.png)
 
 -docker pull centos
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps15.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.15.png)
 
 -docker run centos
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps16.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.16.png)
 
 -docker images
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps17.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.17.png)
 
 -docker run -it centos
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps18.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.18.png)
 
 -yum install httpd
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps19.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.19.png)
 
 -docker ps -a
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps20.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.20.png)
 
 使用commit命令来提交更改到新的镜像中，即创建新的镜像。命令格式
 
@@ -128,7 +128,7 @@ sudo systemctl status docker
 
  
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps21.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.21.png)
 
 这种提交类似于git协议的提交，同样这里提交的镜像只保存在本地。后续可以提交到远程镜像仓库，比如Docker Hub。
 再次使用镜像查看命令：
@@ -137,27 +137,27 @@ sudo systemctl status docker
 
  
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps22.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.22.png)
 
--docker tag f0d2f20a96ab cyx/test_repository:myfirstimagepush
+-docker tag f0d2f20a96ab anmyles/test_repository:myfirstimagepush
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps23.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.23.png)
 
-这里使用镜像ID来指代想要打标签的镜像。完成之后，同样查看已存在的镜像：![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps24.jpg)
+这里使用镜像ID来指代想要打标签的镜像。完成之后，同样查看已存在的镜像：![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.24.png)
 
 -docker login -u anmyles
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps25.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.25.png)
 
 -docker push anmyles/test_repository:myfirstimagepush
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps26.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.26.png)
 
  
 
 -docker pull centos:7
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps27.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.27.png)
 
 查看镜像是否上传成功
 
@@ -165,35 +165,35 @@ sudo systemctl status docker
 
  
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps28.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.28.png)
 
 -docker run -d -it --privileged --name wordpress -p 8888:80 -d centos:7 /usr/sbin/init
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps29.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.29.png)
 
 -docker ps
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps30.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.30.png)
 
 进入容器
 
 -docker exec -it 4c2 /bin/bash
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps31.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.31.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps32.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.32.png)
 
  
 
 -yum install httpd
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps33.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.33.png)
 
 -systemctl start httpd.service
 
 在游览器中输入http://49.235.253.115:8888/查看Apache是否启动
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps34.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.34.png)
 
  
 
@@ -203,63 +203,63 @@ sudo systemctl status docker
 
 -yum install mariadb-server mariadb
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps35.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.35.png)
 
 -systemctl start mariadb
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps36.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.36.png)
 
 -mysql_secure_installation
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps37.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.37.png)
 
  
 
 -systemctl enable mariadb.service
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps38.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.38.png)
 
 -yum install epel-release yum-utils
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps39.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.39.png)
 
 -yum install <http://rpms.remirepo.net/enterprise/remi-release-7.rpm>
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps40.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.40.png)
 
 -yum-config-manager --enable remi-php72
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps41.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.41.png)
 
 -yum install php php-mysql
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps42.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.42.png)
 
 -php -v
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps43.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.43.png)
 
 -restart httpd.service
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps44.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.44.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps45.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.45.png)
 
 登陆数据库
 
 -mysql -u root -p
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps46.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.46.png)
 
 -CREATE USER wordpressuser@localhost IDENTIFIED BY 'password';
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps47.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.47.png)
 
  
 
 -rsync -avP ~/wordpress/ /var/www/html/
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps48.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.48.png)
 
  
 
@@ -271,44 +271,44 @@ sudo systemctl status docker
 
 -yum install git
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps49.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.49.png)
 
 -git clone https://gitee.com/helang_z/wordpress.git
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps50.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.50.png)
 
 -cd wordpress
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps51.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.51.png)
 
 -tar xzvf wordpress-5.2.4.tar.gz
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps52.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.52.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps53.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.53.png)
 
 -rm -rf /var/www/html
 
 -mv wordpress /var/www/html
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps54.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.54.png)
 
 chown -R apache:apache /var/www/html/*
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps55.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.55.png)
 
  
 
 配置完后打开http://49.235.253.115:8888/wp-admin/install.php?step=1
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps56.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.56.png)
 
 -docker commit -m "website" -a "anmyles" 4c2cc62d7a95 anmyles/test_repository
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps57.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.57.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps58.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.58.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps59.jpg) 
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.59.png)
 
-![img](file:///C:\Users\ADMINI~1\AppData\Local\Temp\ksohtml7760\wps60.jpg)
+![image](https://raw.githubusercontent.com/anmyles/cloudcomp/master/image/3.60.png)
