@@ -120,10 +120,127 @@ ssh-keyscan osd1 osd2  mon1  >> ~/.ssh/known_hosts
 
 ![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.27.png)  
 
-在Ceph-admin节点的所有其他节点上安装ceph，用一个命令来完成。
+在每个节点上运行一下指令来安装ceph
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.28.png)  
+yum -y install epel-release yum -y install yum-plugin-priorities sudo yum install -y https://download.ceph.com/rpm-jewel/el7/noarch/ceph-release-1-0.el7.noarch.rpm
 
-但在mon1结点安装时没成功，所以接下来的实验做不了了。
+修改 /etc/yum.repos.d/ceph.repo如下
 
-![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.29.png)  
+ [Ceph] 
+
+name=Ceph pac kages for $basearch
+baseurl=http: //mi rrors.163. com/ ceph/ rpm-j ewel/el7/$basearc
+enabled=1
+gpgcheck=0
+type=rpm- md
+gpgkey=https://mirrors.163.com/ceph/keys/release.asc
+p riority=1
+[Ceph -noarch]
+n ame=Ceph noa rch packages 
+baseurl=http://mirrors163.com/ceph/rpm-jewel/el7/noarch
+enabled=1
+gpgcheck=0 
+type=rpm- md
+gpgkey=https://mirrors.163.com/ceph/keys/release.asc
+p riority=1
+[ceph -source] 
+name=Ceph source packages
+baseurl=http://mirrors.163.com/ceph/rpm-jewel/el7/SRPMS
+enabled=0
+gpgchec k=0
+type= rpm- md
+gpgkey=https://mirrors.163.com/ceph/keys/release.asc
+priority=1
+
+执行yum -y install ceph ceph-radosgw
+
+创建新的群集目录。
+
+```
+mkdir cluster
+cd cluster/
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.30.png)  
+
+接下来，使用**Ceph-Deploy**命令，将监视器节点定义为**mon1**'.
+
+```
+ceph-deploy new mon1
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.31.png)  
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.32.png)  
+
+用vim编辑ceph.conf文件。
+
+```
+vim ceph.conf
+```
+
+在[全局]块下，粘贴下面的配置。
+
+```
+# Your network address
+public network = 10.0.15.0/24
+osd pool default size = 2
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.33.png)  
+
+现在，在mon1节点上部署Ceph-mon。
+
+```
+ceph-deploy mon create-initial
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.34.png)  
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.35.png)  
+
+检查/dev/sdb分区在所有OSD节点上是否可用。
+
+```
+ceph-deploy disk list osd1 osd2 
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.36.png)  
+
+接下来，使用zap选项删除所有节点上的/dev/sdb分区表。
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.37.png)  
+
+现在准备好所有OSDS节点。确保结果中没有错误。
+
+```
+ceph-deploy osd prepare osd1:/dev/sdb
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.38.png)  
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.39.png)  
+
+接下来，将管理密钥部署到所有相关节点。
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.40.png)  
+
+通过在所有节点上运行下面的命令来更改密钥文件的权限。
+
+```
+sudo chmod 644 /etc/ceph/ceph.client.admin.keyring
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.41.png)  
+
+进入ceph
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.42.png)  
+
+检查群集状态。
+
+```
+sudo ceph -s
+```
+
+![image](https://github.com/anmyles/cloudcomp/blob/master/image/4.43.png)  
